@@ -1,5 +1,10 @@
 # Indifferent
 
+![PyPI - License](https://img.shields.io/pypi/l/indifferent?color=blue)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brianwarner/indifferent/pre-release.yml?label=Build%20and%20test)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/brianwarner/indifferent/release.yml?label=Publish%20to%20PyPI)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/indifferent)
+
 `indifferent` analyzes two strings, computes the difference between the two, and prints the results in a variety of formats. It is indifferent to formatting and separators, focusing on the actual content of the strings.
 
 ---
