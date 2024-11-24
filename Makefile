@@ -18,4 +18,4 @@ build: clean test
 html: build
 	cp -r img docsrc/
 	sphinx-build -b html docsrc docs -E -d "docsrc/_doctrees"
-
+	touch docs/.nojekyll
