@@ -5,15 +5,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>indifferent &mdash; indifferent 0.0.post1.dev27+g6cf9cbb.d20241123 documentation</title>
+  <title>indifferent &mdash; indifferent 0.0.post1.dev1+gec907fe documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=7ab3649f" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=d5b5fe26"></script>
-      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/documentation_options.js?v=9509a627"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -1572,32 +1572,6 @@
             <span class="s2">&quot;html&quot;</span><span class="p">:</span> <span class="n">Template</span><span class="p">(</span><span class="n">body_template</span><span class="p">)</span><span class="o">.</span><span class="n">substitute</span><span class="p">(</span><span class="n">html_output</span><span class="p">),</span>
             <span class="s2">&quot;css&quot;</span><span class="p">:</span> <span class="n">external_css</span><span class="p">,</span>
         <span class="p">}</span>
-
-
-<span class="n">base</span> <span class="o">=</span> <span class="s2">&quot;A small orange tabby </span><span class="se">\t</span><span class="s2">cat</span><span class="se">\n</span><span class="s2">&quot;</span>
-<span class="n">revision</span> <span class="o">=</span> <span class="s2">&quot;A big orange </span><span class="se">\t</span><span class="s2">cat</span><span class="se">\n</span><span class="s2">&quot;</span>
-<span class="n">base</span> <span class="o">=</span> <span class="s2">&quot;a big cat&quot;</span>
-<span class="n">revision</span> <span class="o">=</span> <span class="s2">&quot;a tabby cat&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span>
-    <span class="n">compare</span><span class="p">(</span>
-        <span class="n">base</span><span class="o">=</span><span class="s2">&quot;a big cat&quot;</span><span class="p">,</span>
-        <span class="n">revision</span><span class="o">=</span><span class="s2">&quot;a big orange tabby cat with stripes&quot;</span><span class="p">,</span>
-        <span class="n">base_name</span><span class="o">=</span><span class="s2">&quot;What is that?&quot;</span><span class="p">,</span>
-        <span class="n">revision_name</span><span class="o">=</span><span class="s2">&quot;More details please&quot;</span><span class="p">,</span>
-        <span class="n">results</span><span class="o">=</span><span class="s2">&quot;html_page_inline&quot;</span><span class="p">,</span>
-    <span class="p">)[</span><span class="s2">&quot;css&quot;</span><span class="p">]</span>
-<span class="p">)</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;temp.html&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
-    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
-        <span class="n">compare</span><span class="p">(</span>
-            <span class="n">base</span><span class="o">=</span><span class="n">base</span><span class="p">,</span>
-            <span class="n">revision</span><span class="o">=</span><span class="n">revision</span><span class="p">,</span>
-            <span class="n">base_name</span><span class="o">=</span><span class="s2">&quot;the base&quot;</span><span class="p">,</span>
-            <span class="n">results</span><span class="o">=</span><span class="s2">&quot;html_page&quot;</span><span class="p">,</span>
-        <span class="p">)[</span><span class="s2">&quot;html&quot;</span><span class="p">]</span>
-    <span class="p">)</span>
 </pre></div>
 
            </div>
