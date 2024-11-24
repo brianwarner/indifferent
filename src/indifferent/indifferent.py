@@ -1499,29 +1499,3 @@ $head_css</head>
             "html": Template(body_template).substitute(html_output),
             "css": external_css,
         }
-
-
-base = "A small orange tabby \tcat\n"
-revision = "A big orange \tcat\n"
-base = "a big cat"
-revision = "a tabby cat"
-
-print(
-    compare(
-        base="a big cat",
-        revision="a big orange tabby cat with stripes",
-        base_name="What is that?",
-        revision_name="More details please",
-        results="html_page_inline",
-    )["css"]
-)
-
-with open("temp.html", "w") as outfile:
-    outfile.write(
-        compare(
-            base=base,
-            revision=revision,
-            base_name="the base",
-            results="html_page",
-        )["html"]
-    )

@@ -10,4 +10,5 @@
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.createEnvironment.contentButton": "show",
     "editor.formatOnSave": true,
+    "makefile.configureOnOpen": false,
 }

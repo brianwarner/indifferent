@@ -558,7 +558,7 @@ Contributions are [welcome](https://github.com/brianwarner/indifferent)!
 
 1. Clone the [source code](http://github.com/brianwarner/indifferent)
 1. Install the project locally:
-    `python3 -m pip install -r requirements.txt -e ".[dev]"`
+    `python3 -m pip install -r requirements-dev.txt -e ".[dev]"`
 1. Make your changes
 1. Create or update the manually written tests (`tests/test_*.py`)
 1. Regenerate the permutation tests by running `tests/create_permutation_tests.py`

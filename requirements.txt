@@ -1,10 +1,2 @@
 rich
 talkgooder
-pytest [dev]
-pytest-pretty [dev]
-build [dev]
-setuptools [dev]
-setuptools-scm [dev]
-sphinx [dev]
-sphinx_rtd_theme [dev]
-myst_parser [dev]

@@ -29,7 +29,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install flake8 pytest
+        python -m pip install flake8 pytest pytest-pretty
+        python -m pip install -r requirements.txt
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -50,16 +51,24 @@ jobs:
       with:
         python-version: '3.x'
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install build setuptools setuptools-scm sphinx sphinx_rtd_theme myst_parser
+     run: |
+       python -m pip install --upgrade pip
+       python -m pip install -r requirements-dev.txt
     - name: Build the packages
       run: |
         python -m build
     - name: Generate documentation
       run: |
         sphinx-build -b html docsrc docs -E -d "docsrc/_doctrees"
+    - name: Generate documentation with latest version
+      run: |
+        sphinx-build -b html docsrc docs -E -d "docsrc/_doctrees"
+    - name: Check if there are any changes
+      id: verify_diff
+      run: |
+        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
     - name: Commit and push the new documentation
+      if: steps.verify_diff.outputs.changed == 'true'
       run: |
         git config user.name "Brian Warner"
         git config user.email brian@bdwarner.com
