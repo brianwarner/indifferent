@@ -37,7 +37,7 @@ jobs:
       run: |
         pytest
   build:
-    name: Build and generate documentation
+    name: Regenerate documentation
     needs: test
     runs-on: ubuntu-latest
     permissions:
@@ -47,7 +47,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
+        python-version: '3.12'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -56,9 +56,6 @@ jobs:
       run: |
         python -m build
     - name: Generate documentation
-      run: |
-        sphinx-build -b html docsrc docs -E -d "docsrc/_doctrees"
-    - name: Generate documentation with latest version
       run: |
         sphinx-build -b html docsrc docs -E -d "docsrc/_doctrees"
     - name: Check if there are any changes
