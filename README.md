@@ -4,7 +4,7 @@
 
 ---
 
-![Sample output in HTML format](./img/indifferent.jpg)
+![Sample output in HTML format](https://raw.githubusercontent.com/brianwarner/indifferent/main/img/indifferent.jpg)
 
 ---
 
@@ -260,7 +260,7 @@ compare(
 
 returns:
 
-![Table rendered by Rich](./img/table.jpg)
+![Table rendered by Rich](https://raw.githubusercontent.com/brianwarner/indifferent/main/img/table.jpg)
 
 #### Unrendered table
 
@@ -548,7 +548,7 @@ returns a file called `page.html` that looks like this:
 
 ---
 
-![Formatted indifferent page](./img/page.jpg)
+![Formatted indifferent page](https://raw.githubusercontent.com/brianwarner/indifferent/main/img/page.jpg)
 
 ---
 
